@@ -1,0 +1,37 @@
+2020-10-30 [main] INFO  com.company.MyWebsiteJavaApplication -      Starting MyWebsiteJavaApplication on c7c5323b1e73 with PID 66 (/myWebsite-JAVA/target/classes started by root in /myWebsite-JAVA)
+2020-10-30 [main] INFO  com.company.MyWebsiteJavaApplication -      No active profile set, falling back to default profiles: default
+2020-10-30 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -      Tomcat initialized with port(s): 8080 (http)
+2020-10-30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -      Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-30 [main] INFO  org.apache.catalina.core.StandardService -      Starting service [Tomcat]
+2020-10-30 [main] INFO  org.apache.catalina.core.StandardEngine -      Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-10-30 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -      Initializing Spring embedded WebApplicationContext
+2020-10-30 [main] INFO  org.springframework.web.context.ContextLoader -      Root WebApplicationContext: initialization completed in 5651 ms
+2020-10-30 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter -      Flyway Community Edition 6.4.1 by Redgate
+2020-10-30 [main] INFO  com.zaxxer.hikari.HikariDataSource -      HikariPool-1 - Starting...
+2020-10-30 [main] INFO  com.zaxxer.hikari.HikariDataSource -      HikariPool-1 - Start completed.
+2020-10-30 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory -      Database: jdbc:mysql://db:3306/mywebsite_schema (MySQL 5.7)
+2020-10-30 [main] INFO  org.flywaydb.core.internal.command.DbValidate -      Successfully validated 7 migrations (execution time 00:00.245s)
+2020-10-30 [main] INFO  org.flywaydb.core.internal.command.DbMigrate -      Current version of schema `mywebsite_schema`: 13
+2020-10-30 [main] INFO  org.flywaydb.core.internal.command.DbMigrate -      Schema `mywebsite_schema` is up to date. No migration necessary.
+2020-10-30 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain -      Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@687389a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2478b629, org.springframework.security.web.header.HeaderWriterFilter@73a6cc79, org.springframework.web.filter.CorsFilter@8641b7d, org.springframework.security.web.authentication.logout.LogoutFilter@257f30f7, com.company.security.jwt.JwtTokenFilter@37c7766e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a2ac487, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59c43561, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fb450d7, org.springframework.security.web.session.SessionManagementFilter@7e49ded, org.springframework.security.web.access.ExceptionTranslationFilter@1eca3ea7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65cc5252]
+2020-10-30 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Initializing ExecutorService 'clientInboundChannelExecutor'
+2020-10-30 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Initializing ExecutorService 'clientOutboundChannelExecutor'
+2020-10-30 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler -      Initializing ExecutorService 'messageBrokerTaskScheduler'
+2020-10-30 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Initializing ExecutorService 'brokerChannelExecutor'
+2020-10-30 [main] INFO  org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessageHandler -      Mapped "{[/hello],messageType=[MESSAGE]}" onto public com.company.notification.model.Greeting com.company.notification.controller.GreetingController.greeting(com.company.notification.model.HelloMessage) throws java.lang.Exception
+2020-10-30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -      Starting ProtocolHandler ["http-nio-8080"]
+2020-10-30 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -      Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-30 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      Starting...
+2020-10-30 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-10-30 [main] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      Started.
+2020-10-30 [main] INFO  com.company.MyWebsiteJavaApplication -      Started MyWebsiteJavaApplication in 11.239 seconds (JVM running for 13.944)
+2020-10-30 [MessageBroker-1] INFO  org.springframework.web.socket.config.WebSocketMessageBrokerStats -      WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      Stopping...
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler -      Stopped.
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Shutting down ExecutorService 'brokerChannelExecutor'
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler -      Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2020-10-30 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -      Shutting down ExecutorService 'clientInboundChannelExecutor'
+2020-10-30 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -      HikariPool-1 - Shutdown initiated...
+2020-10-30 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -      HikariPool-1 - Shutdown completed.
